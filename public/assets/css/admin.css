@@ -1,0 +1,252 @@
+/* =========================================================
+   ADMIN CUSTOM CSS
+   Sistem Informasi Sekolah
+========================================================= */
+
+
+/* =====================================================
+   LIGHT THEME
+===================================================== */
+
+body.light-theme {
+    background: #f8f9fa;
+    color: #212529;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+body.light-theme .navbar {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+body.light-theme .navbar .nav-link,
+body.light-theme .navbar .nav-link i {
+    color: #000000 !important;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+body.light-theme .sidebar {
+    background: #ffffff !important;
+}
+
+body.light-theme .sidebar .nav .nav-item .nav-link {
+    color: #555555;
+}
+
+body.light-theme .sidebar .nav .nav-item .nav-link:hover {
+    color: #000000 !important;
+    background: #f1f1f1;
+}
+
+
+/* =====================================================
+   SUBMENU
+===================================================== */
+
+body.light-theme .sidebar .sub-menu .nav-item .nav-link {
+    color: #000000 !important;
+    background: transparent !important;
+}
+
+body.light-theme .sidebar .sub-menu .nav-item .nav-link:hover {
+    color: #000000 !important;
+    background: #f1f1f1 !important;
+}
+
+body.light-theme .sidebar .sub-menu .nav-item .nav-link.active,
+body.light-theme .sidebar .sub-menu .nav-item.active > .nav-link {
+    color: #000000 !important;
+    background: #f1f1f1 !important;
+}
+
+
+/* Judul menu utama */
+
+body.light-theme .sidebar > .nav > .nav-item > .nav-link {
+    color: #000000 !important;
+}
+
+
+/* =====================================================
+   SIDEBAR LOGO
+===================================================== */
+
+body.light-theme .sidebar-brand-wrapper {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.admin-logo {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+body.light-theme .admin-logo {
+    color: #000000 !important;
+}
+
+
+/* Logo ADMIN */
+
+.sidebar-brand.brand-logo .admin-logo {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* Logo A saat sidebar minimize */
+
+.sidebar-brand.brand-logo-mini .admin-logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+
+/* =====================================================
+   MOBILE LOGO
+===================================================== */
+
+body.light-theme .navbar-brand-wrapper {
+    background: #ffffff !important;
+}
+
+.navbar-brand.brand-logo-mini .admin-logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+
+/* =====================================================
+   MAIN PANEL
+===================================================== */
+
+body.light-theme .main-panel {
+    background: #f8f9fa;
+}
+
+body.light-theme .content-wrapper {
+    background: #f8f9fa;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+body.light-theme .card {
+    background: #ffffff;
+    color: #212529;
+    border: 1px solid #e5e5e5;
+}
+
+body.light-theme .card .card-title {
+    color: #212529;
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+body.light-theme .text-muted {
+    color: #6c757d !important;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+body.light-theme .footer {
+    background: #ffffff;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/* =====================================================
+   THEME TOGGLE
+===================================================== */
+
+.theme-toggle {
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.15);
+}
+
+body.light-theme .theme-toggle i {
+    color: #000000 !important;
+}
+
+
+/* =====================================================
+   PROFILE NAVBAR
+===================================================== */
+
+body.light-theme .navbar-profile-name {
+    color: #000000 !important;
+}
+
+body.light-theme .navbar-profile .mdi-menu-down {
+    color: #000000 !important;
+}
+
+body.light-theme #profileDropdown i {
+    color: #000000 !important;
+}
+
+
+/* =====================================================
+   DROPDOWN
+===================================================== */
+
+body.light-theme .dropdown-menu {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+
+body.light-theme .dropdown-item {
+    color: #212529;
+}
+
+body.light-theme .dropdown-item:hover {
+    background: #f1f1f1;
+    color: #000000;
+}
+
+
+/* =====================================================
+   LOGOUT BUTTON
+===================================================== */
+
+.logout-button {
+    border: none;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background: rgba(0, 0, 0, 0.05);
+}

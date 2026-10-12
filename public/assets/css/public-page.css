@@ -1,0 +1,3093 @@
+/* =========================================================
+   HEADER / BANNER BERITA
+========================================================= */
+
+.public-page-header {
+    position: relative;
+    overflow: hidden;
+
+    padding: 125px 0 75px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b1d4c 0%,
+            #173d91 50%,
+            #2563eb 100%
+        );
+
+    color: #ffffff;
+}
+
+
+/* Lingkaran dekorasi */
+
+.public-page-header::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    top: -220px;
+    right: -120px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+.public-page-header::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    bottom: -180px;
+    left: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(96, 165, 250, 0.12);
+}
+
+
+/* Isi banner */
+
+.public-page-header-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.public-page-kicker {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    padding: 8px 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.public-page-header h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+
+.public-page-header p {
+    max-width: 700px;
+
+    margin: 16px auto 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   JUDUL SECTION BERITA & PENGUMUMAN
+========================================================= */
+
+.public-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.public-section-heading > div {
+    text-align: center;
+}
+
+.public-section-kicker {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #2563eb;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.public-section-heading h2 {
+    margin: 0;
+
+    color: #1f2937;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 32px;
+
+    line-height: 1.2;
+}
+
+.public-section-heading p {
+    max-width: 600px;
+
+    margin: 10px auto 0;
+
+    color: #8190a5;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   PUBLIC GALERI
+========================================================= */
+
+.public-gallery-card {
+    height: 100%;
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.public-gallery-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.public-gallery-image {
+    position: relative;
+
+    width: 100%;
+    height: 260px;
+
+    overflow: hidden;
+
+    background: #e9eef5;
+}
+
+.public-gallery-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.public-gallery-card:hover
+.public-gallery-image img {
+    transform: scale(1.05);
+}
+
+
+/* OVERLAY */
+
+.public-gallery-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(13, 29, 71, 0.20);
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+}
+
+.public-gallery-card:hover
+.public-gallery-overlay {
+    opacity: 1;
+}
+
+.public-gallery-overlay span {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    color: #2563eb;
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   VIDEO
+========================= */
+
+.public-gallery-video {
+    width: 100%;
+    height: 260px;
+
+    overflow: hidden;
+
+    background: #111827;
+}
+
+.public-gallery-video video {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.public-gallery-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf4ff,
+            #dceaff
+        );
+
+    color: #2563eb;
+
+    font-size: 65px;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+.public-gallery-body {
+    padding: 20px 22px 24px;
+}
+
+.public-gallery-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+}
+
+.public-gallery-top small {
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+.public-gallery-top small i {
+    margin-right: 3px;
+}
+
+
+/* BADGE */
+
+.public-gallery-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 10px;
+
+    border-radius: 50px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.public-gallery-badge.foto {
+    background: #edf4ff;
+
+    color: #2563eb;
+}
+
+.public-gallery-badge.video {
+    background: #fff0f0;
+
+    color: #dc2626;
+}
+
+
+/* JUDUL */
+
+.public-gallery-body h3 {
+    margin: 0 0 8px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #1f2937;
+}
+
+
+/* KETERANGAN */
+
+.public-gallery-body p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 767.98px) {
+
+    .public-gallery-image,
+    .public-gallery-video {
+        height: 270px;
+    }
+
+}
+
+/* =========================================================
+   BERITA & PENGUMUMAN
+========================================================= */
+
+.information-page-hero {
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b1d4c 0%,
+            #193d91 55%,
+            #2870d2 100%
+        );
+}
+
+.information-hero-orb {
+    position: absolute;
+
+    border-radius: 50%;
+}
+
+.information-hero-orb.orb-one {
+    width: 420px;
+    height: 420px;
+
+    right: -120px;
+    top: -150px;
+
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.information-hero-orb.orb-two {
+    width: 270px;
+    height: 270px;
+
+    left: -90px;
+    bottom: -150px;
+
+    background: rgba(89, 184, 255, 0.12);
+}
+
+.information-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+    padding: 125px 0 90px;
+}
+
+.information-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 9px 16px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.10);
+
+    border: 1px solid rgba(255,255,255,0.20);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.information-hero-content h1 {
+    margin-top: 24px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(42px, 5vw, 66px);
+
+    line-height: 1.08;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.information-hero-content h1 span {
+    display: block;
+
+    color: #78baff;
+}
+
+.information-hero-content p {
+    max-width: 700px;
+
+    margin-top: 22px;
+
+    color: rgba(255,255,255,0.80);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.information-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 25px;
+
+    color: rgba(255,255,255,0.70);
+
+    font-size: 14px;
+}
+
+.information-breadcrumb a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+.information-list-section {
+    padding: 95px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8fafc 0%,
+            #eef4fa 100%
+        );
+}
+
+.information-card {
+    height: 100%;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(0,0,0,0.05);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.information-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 42px rgba(0,0,0,0.12);
+}
+
+.information-image {
+    position: relative;
+
+    width: 100%;
+    height: 240px;
+
+    overflow: hidden;
+
+    background: #e9eef5;
+}
+
+.information-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.information-card:hover
+.information-image img {
+    transform: scale(1.05);
+}
+
+.information-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf4ff,
+            #dceaff
+        );
+
+    color: #2563eb;
+
+    font-size: 70px;
+}
+
+.announcement-placeholder {
+    background:
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #ffedd5
+        );
+
+    color: #ea580c;
+}
+
+.information-type {
+    position: absolute;
+
+    left: 16px;
+    bottom: 16px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 7px 12px;
+
+    border-radius: 50px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    backdrop-filter: blur(8px);
+}
+
+.type-berita {
+    background: rgba(37, 99, 235, 0.88);
+}
+
+.type-pengumuman {
+    background: rgba(234, 88, 12, 0.88);
+}
+
+.information-body {
+    padding: 23px 24px 25px;
+}
+
+.information-date {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin-bottom: 12px;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+.information-body h3 {
+    margin: 0 0 10px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #1f2937;
+}
+
+.information-body p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+.information-read-more {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 18px;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.information-read-more:hover {
+    color: #174ea6;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.information-empty {
+    max-width: 550px;
+
+    margin: auto;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.06);
+}
+
+.information-empty-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    border-radius: 20px;
+
+    background: #edf4ff;
+
+    color: #2563eb;
+
+    font-size: 28px;
+}
+
+.information-empty h3 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 23px;
+
+    color: #1f2937;
+}
+
+.information-empty p {
+    margin-top: 8px;
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.information-cta-section {
+    padding: 0 0 90px;
+
+    background: #eef4fa;
+}
+
+.information-cta {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 43px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123a88,
+            #2563c5
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 18px 42px rgba(18,58,136,0.20);
+}
+
+.information-cta span {
+    color: rgba(255,255,255,0.68);
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+}
+
+.information-cta h2 {
+    margin: 8px 0 10px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(25px, 3vw, 36px);
+
+    color: #ffffff;
+}
+
+.information-cta p {
+    margin: 0;
+
+    color: rgba(255,255,255,0.76);
+
+    line-height: 1.7;
+}
+
+@media (max-width: 991.98px) {
+
+    .information-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    .information-hero-content {
+        padding: 110px 0 80px;
+    }
+
+    .information-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .information-hero-content p {
+        font-size: 15px;
+    }
+
+    .information-list-section {
+        padding: 75px 0;
+    }
+
+    .information-image {
+        height: 270px;
+    }
+
+    .information-cta {
+        padding: 30px 24px;
+    }
+
+}
+
+
+/* =========================================================
+   DETAIL PAGE MODERN
+========================================================= */
+
+.detail-page {
+    background: #f6f9fd;
+}
+
+/* HERO */
+
+.detail-hero {
+    position: relative;
+    min-height: 410px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b1d4c 0%,
+            #173d91 55%,
+            #2d70d3 100%
+        );
+
+    color: #ffffff;
+}
+
+.detail-hero::before {
+    content: "";
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    top: -180px;
+    right: -100px;
+
+    background: rgba(255,255,255,0.06);
+}
+
+.detail-hero::after {
+    content: "";
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    bottom: -150px;
+    left: -100px;
+
+    background: rgba(92,185,255,0.12);
+}
+
+.detail-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 900px;
+
+    padding: 130px 0 80px;
+}
+
+.detail-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 9px 15px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.11);
+
+    border: 1px solid rgba(255,255,255,0.20);
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.detail-hero h1 {
+    margin-top: 22px;
+    margin-bottom: 0;
+
+    max-width: 850px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(36px, 5vw, 62px);
+
+    line-height: 1.12;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.detail-breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 24px;
+
+    color: rgba(255,255,255,0.68);
+
+    font-size: 13px;
+}
+
+.detail-breadcrumb a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.detail-breadcrumb a:hover {
+    color: #b9dcff;
+}
+
+
+/* CONTENT */
+
+.detail-section {
+    padding: 85px 0;
+    background: #f6f9fd;
+}
+
+.detail-content-card {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(0,0,0,0.05);
+
+    box-shadow:
+        0 14px 45px rgba(15,35,75,0.08);
+}
+
+
+/* IMAGE */
+
+.detail-main-image {
+    width: 100%;
+
+    height: 430px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.10);
+}
+
+.detail-image-placeholder {
+    width: 100%;
+    height: 430px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf4ff,
+            #dceaff
+        );
+
+    color: #2563eb;
+
+    font-size: 90px;
+}
+
+
+/* INFO PANEL */
+
+.detail-side-panel {
+    height: 100%;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8fbff 0%,
+            #eef5fc 100%
+        );
+
+    border: 1px solid #e5edf6;
+}
+
+.detail-side-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #9ca3af;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.detail-side-title {
+    margin-bottom: 22px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 26px;
+
+    line-height: 1.3;
+
+    color: #1f2937;
+}
+
+.detail-info-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.detail-info-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 14px 15px;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8eef5;
+}
+
+.detail-info-item > i {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #edf4ff;
+
+    color: #2563eb;
+}
+
+.detail-info-item div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.detail-info-item small {
+    margin-bottom: 3px;
+
+    color: #9ca3af;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+}
+
+.detail-info-item strong {
+    color: #374151;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* DESCRIPTION */
+
+.detail-description-box {
+    margin-top: 35px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #edf0f3;
+}
+
+.detail-description-box h3 {
+    margin-bottom: 12px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 24px;
+
+    color: #1f2937;
+}
+
+.detail-description {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    line-height: 1.95;
+}
+
+
+/* DATE */
+
+.detail-date {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 10px;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+}
+
+
+/* SPECIAL IMAGE */
+
+.detail-gallery-image {
+    width: 100%;
+
+    max-height: 650px;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+    background: #f3f4f6;
+}
+
+.detail-gallery-video {
+    width: 100%;
+
+    max-height: 650px;
+
+    display: block;
+
+    border-radius: 20px;
+
+    background: #111827;
+}
+
+
+/* TEACHER */
+
+.detail-teacher-image {
+    width: 100%;
+
+    max-width: 430px;
+
+    height: 470px;
+
+    display: block;
+
+    margin: auto;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    border-radius: 22px;
+}
+
+.detail-teacher-placeholder {
+    width: 100%;
+
+    max-width: 430px;
+
+    height: 470px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf4ff,
+            #dceaff
+        );
+
+    color: #2563eb;
+
+    font-size: 100px;
+}
+
+
+/* NEWS */
+
+.detail-news-image {
+    width: 100%;
+
+    max-height: 560px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+}
+
+.detail-news-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin-bottom: 12px;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+}
+
+.detail-news-content {
+    margin-top: 25px;
+
+    color: #4b5563;
+
+    font-size: 16px;
+
+    line-height: 2;
+}
+
+
+/* BUTTON */
+
+.detail-back-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 30px;
+
+    padding: 11px 18px;
+
+    border-radius: 11px;
+
+    background: #edf4ff;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.detail-back-button:hover {
+    background: #2563eb;
+    color: #ffffff;
+
+    transform: translateX(-2px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 767.98px) {
+
+    .detail-hero-content {
+        padding: 110px 0 75px;
+    }
+
+    .detail-hero h1 {
+        font-size: 37px;
+    }
+
+    .detail-section {
+        padding: 60px 0;
+    }
+
+    .detail-content-card {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .detail-main-image {
+        height: 320px;
+    }
+
+    .detail-image-placeholder {
+        height: 320px;
+    }
+
+    .detail-teacher-image,
+    .detail-teacher-placeholder {
+        height: 380px;
+    }
+
+    .detail-side-panel {
+        padding: 22px;
+    }
+
+}
+/* =========================================================
+   BERITA SEKOLAH
+========================================================= */
+
+.news-card {
+    height: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e8edf4;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(18, 37, 63, 0.07);
+    transition: all 0.25s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(18, 37, 63, 0.12);
+}
+
+.news-card-image-wrap {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    background: #edf4ff;
+}
+
+.news-card-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.news-card-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #edf4ff,
+        #dceaff
+    );
+    color: #2563eb;
+    font-size: 60px;
+}
+
+.news-card-badge {
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 7px 11px;
+
+    border-radius: 50px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.news-card-body {
+    padding: 20px;
+}
+
+.news-card-date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-bottom: 10px;
+
+    color: #9ca3af;
+    font-size: 11px;
+}
+
+.news-card-body h3 {
+    margin-bottom: 10px;
+
+    color: #263244;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.news-card-body p {
+    margin-bottom: 16px;
+
+    color: #8190a5;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.news-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.news-card-link:hover {
+    color: #1d4ed8;
+}
+
+
+/* =========================================================
+   PEMBATAS
+========================================================= */
+
+.announcement-divider {
+    padding: 0;
+}
+
+.announcement-divider-line {
+    height: 1px;
+    background: #e5eaf0;
+}
+
+
+/* =========================================================
+   PENGUMUMAN
+========================================================= */
+
+.announcement-section {
+    padding: 70px 0 90px;
+    background-color: #e2e2e2;
+}
+
+.announcement-kicker {
+    color: #f97316;
+}
+
+.announcement-count {
+    background: #fff2df;
+    color: #ea580c;
+}
+
+.announcement-list {
+    border-top: 1px solid #e5eaf0;
+}
+
+.announcement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 25px 5px;
+
+    border-bottom: 1px solid #e5eaf0;
+
+    background: transparent;
+}
+
+.announcement-icon {
+    width: 56px;
+    height: 56px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #fff2df;
+    color: #f97316;
+
+    font-size: 22px;
+}
+
+.announcement-content {
+    flex: 1;
+}
+
+.announcement-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    margin-bottom: 8px;
+
+    color: #9aa7b8;
+
+    font-size: 11px;
+}
+
+.announcement-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.announcement-status {
+    color: #16a34a !important;
+}
+
+.announcement-content h3 {
+    margin: 0 0 8px;
+
+    color: #263244;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.announcement-content p {
+    max-width: 850px;
+
+    margin: 0;
+
+    color: #8190a5;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .news-card-image-wrap {
+        height: 205px;
+    }
+
+    .announcement-section {
+        padding: 55px 0 70px;
+    }
+
+    .announcement-item {
+        gap: 14px;
+        padding: 20px 0;
+    }
+
+    .announcement-icon {
+        width: 46px;
+        height: 46px;
+
+        border-radius: 12px;
+
+        font-size: 18px;
+    }
+
+    .announcement-content h3 {
+        font-size: 18px;
+    }
+
+}
+/* =========================================================
+   PUBLIC PAGE - EKSTRAKULIKULER
+========================================================= */
+
+.public-page-hero {
+    position: relative;
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d1d47 0%,
+            #193d91 55%,
+            #2d68cd 100%
+        );
+}
+
+.public-page-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 360px;
+    height: 360px;
+
+    border-radius: 50%;
+
+    right: -100px;
+    top: -120px;
+
+    background: rgba(255,255,255,0.06);
+}
+
+.public-page-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    left: -100px;
+    bottom: -120px;
+
+    background: rgba(76, 170, 255, 0.12);
+}
+
+.public-page-hero-content {
+    position: relative;
+    z-index: 2;
+
+    padding: 120px 0 90px;
+}
+
+.public-page-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 15px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.10);
+
+    border: 1px solid rgba(255,255,255,0.20);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.public-page-hero h1 {
+    margin-top: 22px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(42px, 5vw, 64px);
+
+    line-height: 1.08;
+
+    font-weight: 700;
+}
+
+.public-page-hero p {
+    max-width: 700px;
+
+    margin-top: 20px;
+
+    color: rgba(255,255,255,0.82);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.public-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 25px;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 14px;
+}
+
+.public-breadcrumb a {
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+.public-content-section {
+    padding: 90px 0;
+}
+@media (max-width: 767.98px) {
+
+    .public-page-hero-content {
+        padding: 100px 0 80px;
+    }
+
+    .public-page-hero h1 {
+        font-size: 40px;
+    }
+
+    .public-page-hero p {
+        font-size: 15px;
+    }
+}
+/* =========================================================
+   PUBLIC EKSTRAKULIKULER
+========================================================= */
+
+.public-eskul-card {
+    height: 100%;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(0,0,0,0.06);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.public-eskul-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.11);
+}
+
+.public-eskul-image {
+    height: 240px;
+
+    overflow: hidden;
+
+    background: #edf2f7;
+}
+
+.public-eskul-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.public-eskul-card:hover
+.public-eskul-image img {
+    transform: scale(1.05);
+}
+
+.public-eskul-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf4ff,
+            #dceaff
+        );
+
+    color: #2563eb;
+
+    font-size: 65px;
+}
+
+.public-eskul-body {
+    padding: 24px;
+}
+
+.public-eskul-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 11px;
+
+    border-radius: 50px;
+
+    background: #edf4ff;
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.public-eskul-body h3 {
+    margin-top: 16px;
+    margin-bottom: 18px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 22px;
+
+    line-height: 1.35;
+
+    color: #1f2937;
+}
+
+.public-eskul-meta {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 11px;
+
+    margin-bottom: 13px;
+
+    color: #6b7280;
+}
+
+.public-eskul-meta > i {
+    margin-top: 3px;
+
+    color: #2563eb;
+
+    font-size: 17px;
+}
+
+.public-eskul-meta div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.public-eskul-meta small {
+    margin-bottom: 2px;
+
+    font-size: 11px;
+
+    color: #9ca3af;
+}
+
+.public-eskul-meta strong {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+.public-eskul-description {
+    margin-top: 18px;
+    padding-top: 17px;
+
+    border-top: 1px solid rgba(0,0,0,0.07);
+
+    color: #6b7280;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+.public-pagination {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+
+    .public-eskul-image {
+        height: 260px;
+    }
+
+}
+/* =========================================================
+   PUBLIC GURU
+========================================================= */
+
+.public-teacher-card {
+    height: 100%;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.public-teacher-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.11);
+}
+
+.public-teacher-image {
+    width: 100%;
+    height: 360px;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+.public-teacher-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center top;
+
+    transition: transform 0.4s ease;
+}
+
+.public-teacher-card:hover
+.public-teacher-image img {
+    transform: scale(1.03);
+}
+
+.public-teacher-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf4ff,
+            #dceaff
+        );
+
+    color: #2563eb;
+
+    font-size: 70px;
+}
+
+.public-teacher-body {
+    padding: 20px 15px 24px;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+.public-teacher-body h3 {
+    margin: 0 0 7px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #3f3f3f;
+}
+
+.public-teacher-body p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.45;
+
+    color: #555555;
+}
+
+@media (max-width: 767.98px) {
+
+    .public-teacher-image {
+        height: 380px;
+    }
+
+}
+
+/* =========================================================
+   PUBLIC PROFILE
+========================================================= */
+
+.profile-public-hero {
+    position: relative;
+    min-height: 540px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    color: #ffffff;
+}
+
+.profile-public-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1.03);
+}
+
+.profile-public-bg-empty {
+    background:
+        linear-gradient(
+            135deg,
+            #0d1d47,
+            #1e4b9a,
+            #2d68cd
+        );
+}
+
+.profile-public-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 18, 45, 0.92) 0%,
+            rgba(9, 29, 69, 0.76) 45%,
+            rgba(11, 33, 76, 0.45) 100%
+        );
+}
+
+.profile-public-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 780px;
+
+    padding: 130px 0 90px;
+}
+
+.profile-public-hero h1 {
+    margin-top: 24px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(42px, 5vw, 68px);
+
+    line-height: 1.08;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.profile-public-hero h1 span {
+    display: block;
+
+    color: #78b8ff;
+}
+
+.profile-public-hero p {
+    max-width: 700px;
+
+    margin-top: 22px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.82);
+}
+
+
+/* =========================================================
+   HIGHLIGHT
+========================================================= */
+
+.profile-highlight-section {
+    position: relative;
+
+    margin-top: -55px;
+
+    z-index: 5;
+
+    padding-bottom: 30px;
+}
+
+.profile-highlight-card {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.10);
+
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.profile-highlight-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #edf4ff;
+
+    color: #2563eb;
+
+    font-size: 22px;
+}
+
+.profile-highlight-card div:last-child {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.profile-highlight-card strong {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    color: #1f2937;
+}
+
+.profile-highlight-card span {
+    margin-top: 5px;
+
+    font-size: 13px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.profile-about-section {
+    padding-top: 70px;
+}
+
+.profile-about-image {
+    position: relative;
+
+    min-height: 470px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,0.12);
+}
+
+.profile-about-image img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 470px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.profile-about-placeholder {
+    width: 100%;
+    min-height: 470px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf4ff,
+            #dceaff
+        );
+
+    color: #2563eb;
+
+    font-size: 90px;
+}
+
+.profile-about-badge {
+    position: absolute;
+
+    left: 22px;
+    bottom: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 14px 17px;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.96);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.13);
+}
+
+.profile-about-badge > i {
+    color: #2563eb;
+
+    font-size: 23px;
+}
+
+.profile-about-badge div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.profile-about-badge small {
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+.profile-about-badge strong {
+    color: #1f2937;
+
+    font-size: 16px;
+}
+
+.profile-about-title {
+    margin-top: 12px;
+    margin-bottom: 18px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(30px, 4vw, 45px);
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    color: #1f2937;
+}
+
+.profile-about-text {
+    color: #6b7280;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+.profile-meta-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 13px;
+
+    margin-top: 28px;
+}
+
+.profile-meta-box {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid #edf1f5;
+}
+
+.profile-meta-box > i {
+    color: #2563eb;
+
+    font-size: 19px;
+
+    margin-top: 2px;
+}
+
+.profile-meta-box div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.profile-meta-box small {
+    color: #9ca3af;
+
+    font-size: 10px;
+
+    margin-bottom: 3px;
+}
+
+.profile-meta-box strong {
+    color: #374151;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   VISI MISI
+========================================================= */
+
+.profile-vision-section {
+    padding: 100px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8fafc 0%,
+            #eef4fb 100%
+        );
+}
+
+.vision-card,
+.mission-card {
+    height: 100%;
+
+    border-radius: 22px;
+
+    padding: 34px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.07);
+
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.vision-card {
+    background:
+        linear-gradient(
+            135deg,
+            #183d8d,
+            #2563c5
+        );
+
+    color: #ffffff;
+}
+
+.vision-icon,
+.mission-icon {
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    font-size: 23px;
+}
+
+.vision-icon {
+    background: rgba(255,255,255,0.14);
+
+    color: #ffffff;
+}
+
+.vision-card > span {
+    display: block;
+
+    margin-top: 23px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+
+    color: rgba(255,255,255,0.74);
+}
+
+.vision-card h3 {
+    margin-top: 9px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 28px;
+
+    line-height: 1.3;
+
+    color: #ffffff;
+}
+
+.vision-card p {
+    margin-top: 17px;
+
+    margin-bottom: 0;
+
+    color: rgba(255,255,255,0.82);
+
+    line-height: 1.8;
+}
+
+.mission-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.mission-icon {
+    flex-shrink: 0;
+
+    background: #edf4ff;
+
+    color: #2563eb;
+}
+
+.mission-heading span {
+    color: #9ca3af;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.mission-heading h3 {
+    margin: 3px 0 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 25px;
+
+    color: #1f2937;
+}
+
+.mission-content {
+    margin-top: 28px;
+
+    padding-top: 23px;
+
+    border-top: 1px solid #edf0f3;
+}
+
+.mission-content p {
+    margin: 0;
+
+    color: #6b7280;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   IDENTITAS SEKOLAH
+========================================================= */
+
+.school-info-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 17px;
+
+    height: 100%;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(0,0,0,0.05);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.06);
+}
+
+.school-info-icon {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: #edf4ff;
+
+    color: #2563eb;
+
+    font-size: 21px;
+}
+
+.school-info-card div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.school-info-card span {
+    color: #9ca3af;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+.school-info-card p {
+    margin: 5px 0 0;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.profile-cta-section {
+    padding: 0 0 90px;
+
+    background: #ffffff;
+}
+
+.profile-cta {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 42px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123a88,
+            #2563c5
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 16px 40px rgba(18,58,136,0.22);
+}
+
+.profile-cta span {
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.3px;
+
+    color: rgba(255,255,255,0.7);
+}
+
+.profile-cta h2 {
+    margin: 8px 0 10px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(25px, 3vw, 36px);
+
+    line-height: 1.25;
+
+    color: #ffffff;
+}
+
+.profile-cta p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.78);
+
+    line-height: 1.7;
+}
+
+.profile-cta-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+@media (max-width: 991.98px) {
+
+    .profile-cta {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    .profile-public-hero-content {
+        padding: 110px 0 80px;
+    }
+
+    .profile-public-hero h1 {
+        font-size: 40px;
+    }
+
+    .profile-highlight-section {
+        margin-top: -35px;
+    }
+
+    .profile-meta-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-about-image,
+    .profile-about-placeholder {
+        min-height: 350px;
+    }
+
+    .profile-about-image img {
+        min-height: 350px;
+    }
+
+    .vision-card,
+    .mission-card {
+        padding: 27px;
+    }
+
+    .profile-cta {
+        padding: 30px 24px;
+    }
+
+}
+
+/* =========================================================
+   HERO HALAMAN PRESTASI
+========================================================= */
+
+.page-hero {
+    position: relative;
+    min-height: 380px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d1d47 0%,
+            #193d91 55%,
+            #2c65c8 100%
+        );
+
+    color: white;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    top: -120px;
+    right: -80px;
+}
+
+.page-hero::after {
+    content: "";
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: rgba(72, 160, 255, 0.12);
+
+    bottom: -100px;
+    left: -70px;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+
+    padding: 110px 0 90px;
+}
+
+.page-hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 15px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.page-hero h1 {
+    margin-top: 22px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.page-hero p {
+    max-width: 680px;
+
+    margin-top: 20px;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.breadcrumb-custom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.breadcrumb-custom a {
+    color: white;
+    text-decoration: none;
+}
+
+/* =========================================================
+   KARTU PRESTASI PUBLIK
+========================================================= */
+
+.achievement-section {
+    padding: 90px 0;
+}
+
+.achievement-card {
+    height: 100%;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.11);
+}
+
+.achievement-image {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: #eef2f7;
+}
+
+.achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.achievement-card:hover .achievement-image img {
+    transform: scale(1.05);
+}
+
+.achievement-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #edf4ff, #dce9ff);
+    color: #2563eb;
+    font-size: 64px;
+}
+
+.achievement-body {
+    padding: 24px;
+}
+
+.achievement-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 11px;
+    border-radius: 50px;
+    background: #edf4ff;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.achievement-body h3 {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    line-height: 1.4;
+    color: #1f2937;
+}
+
+.achievement-body p {
+    margin-bottom: 16px;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.achievement-year {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.achievement-year i {
+    color: #2563eb;
+}
+
+/* =========================================================
+   PAGINATION HALAMAN PRESTASI
+========================================================= */
+
+.pagination-wrapper {
+    margin-top: 50px;
+}
+

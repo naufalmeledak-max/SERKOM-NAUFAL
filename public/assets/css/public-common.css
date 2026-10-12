@@ -1,0 +1,944 @@
+/* =========================================================
+   PUBLIC COMMON CSS
+   Shared by public pages
+   Navbar + Footer
+========================================================= */
+
+/* =========================================================
+   PUBLIC NAVBAR
+========================================================= */
+
+.public-page-navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1030;
+
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+
+    opacity: 1 !important;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+    box-shadow:
+        0 4px 20px rgba(15, 35, 75, 0.08);
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+
+/* =========================================================
+   NAV LINK
+========================================================= */
+
+.public-page-navbar .nav-link {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 2px;
+
+    padding: 9px 13px !important;
+
+    border-radius: 10px;
+
+    color: #374151 !important;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition:
+        color .25s ease,
+        background .25s ease,
+        transform .25s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.public-page-navbar .nav-link:hover {
+    background: #f1f5f9;
+
+    color: #2563eb !important;
+}
+
+
+/* =========================================================
+   MENU AKTIF
+========================================================= */
+
+.public-page-navbar .nav-link.active {
+    background: #eaf2ff !important;
+
+    color: #2563eb !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* efek sedikit ketika hover pada menu aktif */
+
+.public-page-navbar .nav-link.active:hover {
+    background: #dfeaff !important;
+
+    color: #1d4ed8 !important;
+}
+
+
+/* =========================================================
+   LOGIN
+========================================================= */
+
+.public-page-navbar .btn-primary-custom {
+    background: #2563eb !important;
+
+    border: 1px solid #2563eb !important;
+
+    color: #ffffff !important;
+
+    border-radius: 10px;
+
+    padding: 10px 16px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: all .25s ease;
+}
+
+
+.public-page-navbar .btn-primary-custom:hover {
+    background: #1d4ed8 !important;
+
+    border-color: #1d4ed8 !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, .22);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .public-page-navbar .navbar-nav {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+
+    .public-page-navbar .nav-link {
+        justify-content: flex-start;
+
+        width: 100%;
+
+        margin: 3px 0;
+
+        padding: 11px 13px !important;
+    }
+
+
+    .public-page-navbar .nav-link.active {
+        background: #eaf2ff !important;
+
+        color: #2563eb !important;
+    }
+
+
+    .public-page-navbar .btn-primary-custom {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 5px;
+    }
+
+}
+
+/* =========================================================
+   NAVBAR BRAND
+========================================================= */
+
+.public-navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.public-navbar-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    display: block;
+}
+
+.public-navbar-logo-placeholder {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #edf4ff;
+    color: #2563eb;
+}
+
+.public-navbar-brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.public-navbar-brand-text strong {
+    color: #1f2937;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.public-navbar-brand-text span {
+    margin-top: 3px;
+    color: #94a3b8;
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   DROPDOWN TOGGLE
+========================================================= */
+
+.public-page-navbar .dropdown-toggle {
+    gap: 5px;
+}
+
+.public-page-navbar .dropdown-toggle::after {
+    margin-left: 3px;
+    vertical-align: middle;
+    border-top: 4px solid currentColor;
+    border-right: 4px solid transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+}
+
+
+/* =========================================================
+   DROPDOWN MENU
+========================================================= */
+
+.public-navbar-dropdown {
+    min-width: 285px;
+    margin-top: 10px !important;
+    padding: 9px;
+    border: 1px solid #e5ebf3 !important;
+    border-radius: 16px !important;
+    background: #ffffff;
+    box-shadow: 0 18px 45px rgba(15, 35, 75, 0.12);
+}
+
+
+/* =========================================================
+   DROPDOWN ITEM
+========================================================= */
+
+.public-navbar-dropdown .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 11px;
+    border-radius: 11px;
+    color: #374151;
+    white-space: normal;
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
+}
+
+.public-navbar-dropdown .dropdown-item:hover {
+    background: #f3f7fd;
+    color: #2563eb;
+    transform: translateX(3px);
+}
+
+.public-navbar-dropdown .dropdown-item.active {
+    background: #eaf2ff;
+    color: #2563eb;
+}
+
+.public-navbar-dropdown .dropdown-item.active:hover {
+    background: #dfeaff;
+    color: #1d4ed8;
+}
+
+
+/* =========================================================
+   DROPDOWN ICON
+========================================================= */
+
+.public-dropdown-icon {
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: #edf4ff;
+    color: #2563eb;
+    font-size: 15px;
+    transition: all .25s ease;
+}
+
+.public-navbar-dropdown .dropdown-item:hover .public-dropdown-icon,
+.public-navbar-dropdown .dropdown-item.active .public-dropdown-icon {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DROPDOWN CONTENT
+========================================================= */
+
+.public-dropdown-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.public-dropdown-content strong {
+    color: #374151;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.public-dropdown-content small {
+    margin-top: 3px;
+    color: #9aa7b8;
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+.public-navbar-dropdown .dropdown-item:hover .public-dropdown-content strong,
+.public-navbar-dropdown .dropdown-item.active .public-dropdown-content strong {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   NAVBAR TOGGLER
+========================================================= */
+
+.public-navbar-toggler {
+    padding: 7px 9px;
+    border: 1px solid #dce5ef !important;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.public-navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================================
+   DESKTOP DROPDOWN
+========================================================= */
+
+@media (min-width: 992px) {
+
+    .public-navbar-dropdown {
+        animation: publicDropdownShow .2s ease;
+        transform-origin: top center;
+    }
+
+    @keyframes publicDropdownShow {
+
+        from {
+            opacity: 0;
+            transform: translateY(-6px) scale(.98);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .public-navbar-dropdown {
+        min-width: 100%;
+        margin-top: 5px !important;
+        border: 0 !important;
+        border-left: 2px solid #edf4ff !important;
+        border-radius: 0 !important;
+        box-shadow: none;
+        background: #fafcff;
+    }
+
+    .public-navbar-dropdown .dropdown-item {
+        padding: 10px;
+    }
+
+    .public-navbar-brand-text strong {
+        max-width: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+}
+
+/* =========================================================
+   MODERN FOOTER
+========================================================= */
+
+.modern-footer {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0 0;
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(96, 165, 250, 0.16),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(59, 130, 246, 0.14),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #071735 0%,
+            #0b2459 48%,
+            #123d8f 100%
+        );
+    color: rgba(255, 255, 255, 0.70);
+}
+
+
+/* =========================================================
+   DECORATIVE SHAPES
+========================================================= */
+
+.modern-footer-shape {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.modern-footer-shape-one {
+    width: 420px;
+    height: 420px;
+    top: -250px;
+    right: -120px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.modern-footer-shape-two {
+    width: 300px;
+    height: 300px;
+    left: -170px;
+    bottom: -180px;
+    border: 1px solid rgba(96, 165, 250, 0.10);
+    background: rgba(96, 165, 250, 0.04);
+}
+
+
+/* =========================================================
+   MAIN FOOTER
+========================================================= */
+
+.modern-footer-main {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 55px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.modern-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.modern-footer-logo {
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.modern-footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.modern-footer-logo i {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.modern-footer-brand h3 {
+    margin: 0 0 3px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.modern-footer-brand span {
+    color: #93c5fd;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.modern-footer-description {
+    max-width: 500px;
+    margin: 22px 0 25px;
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   SOCIAL ICON
+========================================================= */
+
+.modern-footer-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modern-footer-social a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.modern-footer-social a:hover {
+    border-color: rgba(147, 197, 253, 0.45);
+    background: #2563eb;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================================
+   COLUMN TITLE
+========================================================= */
+
+.modern-footer-column {
+    height: 100%;
+}
+
+.modern-footer-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 22px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.modern-footer-title::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    border-radius: 20px;
+    background: #60a5fa;
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
+
+.modern-footer-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.modern-footer-links li {
+    margin-bottom: 11px;
+}
+
+.modern-footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 13px;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.modern-footer-links a i {
+    color: #60a5fa;
+    font-size: 9px;
+    transition: transform .25s ease;
+}
+
+.modern-footer-links a:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+.modern-footer-links a:hover i {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.modern-footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.modern-footer-contact-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(96, 165, 250, 0.13);
+    color: #93c5fd;
+    font-size: 15px;
+}
+
+.modern-footer-contact-item span {
+    display: block;
+    margin-bottom: 4px;
+    color: rgba(255, 255, 255, 0.42);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.modern-footer-contact-item p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.modern-footer-contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-top: 7px;
+    padding: 13px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.modern-footer-contact-button i {
+    color: #93c5fd;
+    transition: transform .25s ease;
+}
+
+.modern-footer-contact-button:hover {
+    border-color: rgba(147, 197, 253, 0.35);
+    background: rgba(37, 99, 235, 0.70);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.modern-footer-contact-button:hover i {
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.modern-footer-bottom {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 23px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.modern-footer-copyright,
+.modern-footer-bottom-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.modern-footer-copyright,
+.modern-footer-bottom-right {
+    color: rgba(255, 255, 255, 0.42);
+    font-size: 10px;
+}
+
+.modern-footer-dot {
+    color: #60a5fa;
+}
+
+.modern-footer-heart {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.modern-footer-heart i {
+    color: #60a5fa;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .modern-footer {
+        padding-top: 65px;
+    }
+
+    .modern-footer-main {
+        padding-bottom: 40px;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+    .modern-footer {
+        padding-top: 55px;
+    }
+
+    .modern-footer-brand {
+        align-items: flex-start;
+    }
+
+    .modern-footer-logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
+    }
+
+    .modern-footer-brand h3 {
+        font-size: 18px;
+    }
+
+    .modern-footer-description {
+        font-size: 12px;
+    }
+
+    .modern-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .modern-footer-bottom-right {
+        align-items: flex-start;
+    }
+
+}
+/* =========================================================
+   PUBLIC GLOBAL / SHARED COMPONENTS
+   Dipakai bersama oleh halaman publik
+========================================================= */
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-soft {
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.section-kicker {
+    margin-bottom: 10px;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.section-title h2 {
+    margin: 0;
+    color: #0f172a;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: -.03em;
+}
+
+.section-title p {
+    max-width: 680px;
+    margin: 14px auto 0;
+    color: #64748b;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CONTENT CARD
+========================================================= */
+
+.content-card {
+    height: 100%;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    background: #ffffff;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, .08);
+}
+
+
+/* =========================================================
+   BADGE SOFT
+========================================================= */
+
+.badge-soft {
+    display: inline-flex;
+    align-items: center;
+    padding: .42rem .7rem;
+    border-radius: 999px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .section {
+        padding: 80px 0;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+}

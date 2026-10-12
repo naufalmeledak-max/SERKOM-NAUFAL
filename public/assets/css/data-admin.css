@@ -1,0 +1,52 @@
+/* CRUD Data Diri - dashboard admin */
+.data-admin-page { color: #26344d; }
+.data-admin-eyebrow { color: #2860c5; font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.data-admin-title { margin: .35rem 0 .45rem; color: #17233f; font-size: clamp(1.65rem, 3vw, 2.15rem); font-weight: 800; letter-spacing: -.035em; }
+.data-admin-subtitle { color: #7a8497; }
+.data-admin-primary-btn { padding: .72rem 1.1rem; border-radius: .75rem; font-weight: 700; box-shadow: 0 6px 16px rgba(40,96,197,.15); }
+.data-admin-back { color: #2860c5; text-decoration: none; font-weight: 700; }
+.data-admin-back:hover { color: #17479f; }
+.data-admin-table-card, .data-admin-form-card, .data-admin-preview-card, .data-admin-detail-card { overflow: hidden; border: 1px solid #e8edf5; border-radius: 1.1rem; box-shadow: 0 10px 32px rgba(24,43,78,.055); }
+.data-admin-table-card .card-header, .data-admin-form-card .card-header { padding: 1.25rem 1.5rem; border-bottom: 1px solid #edf1f6; }
+.data-admin-table-card .card-header h5, .data-admin-form-card .card-header h5 { color: #1d2b45; font-weight: 800; }
+.data-admin-table-card .card-header small, .data-admin-form-card .card-header small { color: #8490a4; }
+.data-admin-count { align-items: center; padding: .48rem .75rem; border-radius: 999px; background: #edf3ff; color: #2860c5; font-size: .8rem; font-weight: 800; white-space: nowrap; }
+.data-admin-table thead th { padding-top: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #e8edf5; background: #f8faff; color: #78849a; font-size: .73rem; font-weight: 800; letter-spacing: .055em; text-transform: uppercase; white-space: nowrap; }
+.data-admin-table tbody td { padding-top: .95rem; padding-bottom: .95rem; border-color: #edf1f6; }
+.data-admin-table tbody tr:last-child td { border-bottom: 0; }
+.data-admin-table tbody tr:hover { background: #fbfcff; }
+.data-admin-thumb, .data-admin-thumb-placeholder { display: flex; width: 58px; height: 58px; align-items: center; justify-content: center; border-radius: 14px; object-fit: cover; background: #edf3ff; color: #849ac2; font-size: 1.7rem; }
+.data-admin-name { color: #1e2b45; font-weight: 800; }
+.data-admin-class { display: inline-block; padding: .4rem .65rem; border-radius: .55rem; background: #f0f4fa; color: #52617a; font-size: .82rem; font-weight: 700; }
+.data-admin-action { display: inline-flex; width: 34px; height: 34px; align-items: center; justify-content: center; border: 1px solid #e8edf5; border-radius: .6rem; color: #52617a; }
+.data-admin-action:hover { border-color: #cbd9f5; background: #edf3ff; color: #2860c5; }
+.data-admin-delete:hover { border-color: #f4cbd0; background: #fff0f1; color: #c52e43; }
+.data-admin-empty-icon { color: #a7b6d0; font-size: 3.2rem; }
+.data-admin-form-card .card-body { background: #fff; }
+.data-admin-form-card .form-label { margin-bottom: .55rem; color: #273650; font-size: .9rem; font-weight: 800; }
+.data-admin-form-card .form-control { border-color: #dfe6f0; border-radius: .7rem; box-shadow: none; }
+.data-admin-form-card .form-control:focus { border-color: #8eaeea; box-shadow: 0 0 0 .2rem rgba(40,96,197,.1); }
+.data-admin-form-card .form-control-lg { min-height: 49px; font-size: .95rem; }
+.data-admin-preview-card .card-body { background: #fff; }
+.data-admin-preview-card h6 { color: #24324b; font-weight: 800; }
+.data-admin-upload-preview { display: flex; min-height: 260px; flex-direction: column; align-items: center; justify-content: center; gap: .8rem; overflow: hidden; border: 1px dashed #cbd6e7; border-radius: 1rem; background: #f7f9fd; color: #93a2bb; text-align: center; }
+.data-admin-upload-preview > i { font-size: 3.25rem; }
+.data-admin-upload-preview > span { padding: 0 1rem; font-size: .85rem; }
+.data-admin-upload-preview img { display: block; width: 100%; height: 300px; object-fit: cover; }
+.data-admin-detail-photo { display: flex; min-height: 360px; height: 100%; align-items: center; justify-content: center; overflow: hidden; background: #edf3ff; color: #8da2c5; font-size: 6rem; }
+.data-admin-detail-photo img { width: 100%; height: 100%; min-height: 360px; max-height: 560px; object-fit: cover; }
+.data-admin-detail-name { margin: 0 0 1.5rem; color: #17233f; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; overflow-wrap: anywhere; }
+.data-admin-detail-field { display: flex; justify-content: space-between; gap: 1.25rem; padding: 1rem 0; border-bottom: 1px solid #edf1f6; }
+.data-admin-detail-field span { color: #7b879b; }
+.data-admin-detail-field strong { color: #26344d; text-align: right; overflow-wrap: anywhere; }
+.data-admin-page .pagination { margin-bottom: 0; }
+.data-admin-page .page-link { color: #2860c5; }
+.data-admin-page .page-item.active .page-link { border-color: #2860c5; background: #2860c5; }
+@media (max-width: 767.98px) {
+    .data-admin-page { padding-top: 1.2rem !important; }
+    .data-admin-table-card .card-header { padding: 1rem; }
+    .data-admin-table td, .data-admin-table th { white-space: nowrap; }
+    .data-admin-detail-photo, .data-admin-detail-photo img { min-height: 280px; max-height: 360px; }
+    .data-admin-detail-field { flex-direction: column; gap: .35rem; }
+    .data-admin-detail-field strong { text-align: left; }
+}
